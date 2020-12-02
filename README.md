@@ -1,7 +1,7 @@
 Random number generator with custom distribution
 ==============
 Standard PHP functions like `rand` or `mt_rand` generate random numbers with normal distribution, however sometimes it 
-required to generate random numbers with different distribution, for example (binomial distribution)[https://en.wikipedia.org/wiki/Binomial_distribution].
+required to generate random numbers with different distribution, for example [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution).
 
 
 Installation
