@@ -31,21 +31,65 @@ Some Additional Examples
 	<tr>
 		<td>Normal Distribution</td>
 		<td>
-```php
-$generator = new \Qmegas\RandomGenerator(1, $max, function() {
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function() {
 	return 1;
-});
-```
+});</pre>
 		</td>
 	</tr>
 	<tr>
-		<td><img src="./images/1.jpg"></td>
+		<td><img src="./images/1.png"></td>
 		<td>
-```php
-$generator = new \Qmegas\RandomGenerator(1, $max, function(float $i) {
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
 	return $i * 100;
-});
-```
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/m1.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return (1 - $i) * 100;
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/p.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return (1 - $i) * 200 * $i;
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/pr.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return (2 * (1 - $i) * ($i ** 0.5) + ($i ** 2)) * 100;
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/pr2.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return ($i ** 3) * 100;
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/sr.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return (3 * ((1 - $i) ** 2) * $i + ($i ** 3)) * 100;
+});</pre>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="./images/s.png"></td>
+		<td>
+			<pre lang="php">$generator = new \Qmegas\RandomGenerator($min, $max, function(float $i) {
+	return (1 / (1 + exp(-10 * ($i - 0.5)))) * 100;
+});</pre>
 		</td>
 	</tr>
 </table>
