@@ -29,7 +29,7 @@ class RandomGenerator
 
     public function getNumber(): int 
     {
-        $number = mt_rand(0, $this->realMax);
+        $number = mt_rand(1, $this->realMax);
         return $this->min + $this->getBestIndex($number);
     }
 
